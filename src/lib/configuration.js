@@ -1,6 +1,6 @@
 let grpc = require('@grpc/grpc-js');
 let protoLoader = require('@grpc/proto-loader');
-let PROTO_PATH = './proto/calculator.proto';
+let PROTO_PATH = './proto/chat.proto';
 
 let packageDefinition = protoLoader.loadSync(PROTO_PATH, {
     keepCase: true,

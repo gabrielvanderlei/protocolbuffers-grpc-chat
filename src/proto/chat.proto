@@ -2,15 +2,22 @@ syntax = "proto3";
 
 package chat;
 
-service Chat {
-  rpc SendMessage (MessageRequest) returns (MessageReturn) {}
+service Chat {    
+  rpc MessageStream(MessageUserRequest) returns (stream MessageTextResponse) {}
+  rpc SendMessage(MessageRequest) returns (Void) {}
+}
+
+message Void {}
+
+message MessageUserRequest {
+  string user = 1;
+}
+
+message MessageTextResponse {
+  string message = 1;
 }
 
 message MessageRequest {
   string user = 1;
   string message = 2;
-}
-
-message MessageReturn {
-  bool messageSent = 1;
 }
