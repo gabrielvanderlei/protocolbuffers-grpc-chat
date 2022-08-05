@@ -25,11 +25,6 @@ Inicie o cliente
 node client.js
 ```
 
-## Comandos suportados
-* '+' - Realiza a soma dos números na sequência. Exemplo: "+ 10 2"
-* '-' - Realiza a subtração dos números na sequência. Exemplo: "- 10 2"
-* '*' - Realiza a multiplicação dos números na sequência. Exemplo: "* 10 2"
-* '/' - Realiza a di8visão dos números na sequência. Exemplo: "/ 10 2"
 
 ## Configurações
 No arquivo configuration.js você pode modificar as seguintes variáveis:
